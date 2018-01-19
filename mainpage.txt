@@ -1,0 +1,28 @@
+/**
+\mainpage Micromouse
+
+<br>Temat:</br>
+
+Napisać program umożliwiający symulację przejścia robota micromouse przez labirynt. Program ma umożliwiać wizualizację ruchu robota, sam robot ma być obiektem, ma mieć czujniki, i ma podejmować decyzje tylko i wyłącznie w oparciu o lokalne dane. Więcej informacji o micromouse znajdziecie po wpisaniu hasła w wyszukiwarkę.
+
+<br>Funkcjonalność: </br>
+
+Stworzony przeze mnie program będzie symulował przejście robota przez labirytnt. 
+Ruchy robota będą automatyczne. Użytkownik będzie sterował prędkością przechodzenia robota przez labirynt oraz będzie mógł również przełączać widok pomiędzy normalnym widokiem całego labiryntu, a widokiem labiryntu zapisanym w pamięci robota.
+Drugą opcją jest sterowanie ruchami robota manualnie przez użytkownika, w której użytkownik będzie sam odnajdywał drogę w labiryncie.
+
+Labirynt będzie tablicą dwuwymiarową. Wczytywany będzie z pliku o zdefiniowaniej strukturze. Zadaniem robota będzie przejście z punktu startowego do środka labiryntu. Cała przestrzeń i robot będzie przedstawiony na grafice dwuwymiarowej.
+
+W zawodach na wykonanie przejazdu robot ma 2 przejazdy. Pierwszy przejazd jest przejazdem wykorzystywanym na mapowanie struktury labiryntu, a drugi polega na jak najszybszym dotarciu do środka labiryntu na podstawie danych zgromadzonych z 1 przejazdu (mapowania).
+
+Do automatycznego poruszania się robota zaimplementuje algorytm przyśpieszonej propagacji fali.
+W Symulacja będzie zakładała, że robot początkowo nie zna układu scian w labiryncie. W pierwszym przejeździe zbuduje mapę całego labiryntu. W drugim jak najszybciej pokona trasę od punktu początkowego do końcowego. Wszystkie pola w pamięci robota będą zapisane w postaci wag przejścia od punktu początkowego. Na ich podstawie zostanie wyznaczona droga w drugim przejeździe.
+
+Tryb manualny będzie składał się z dwóch opcji. W której użytkownik widzi cały labirynt i drugiej w której użytkownik będzie widział przebytą drogę.
+
+Program będzie oferował również licznik wykonanych kroków.
+
+<br>Środowisko: </br>
+
+Program tworzony jest w środowisku programistycznym QtCreator. Implementacja GUI realizowana jest więc przy pomocy biblioteki Qt. Jako bibliotekę standardową wykorzystam bibliotekę stack, implementującą stos jako struktuę danych. Struktura będzie przechowywała drogę od startu do mety, obliczoną pod koniec pierwszego etapu. 
+*/
